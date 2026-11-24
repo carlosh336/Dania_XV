@@ -241,7 +241,7 @@ section{position:relative; text-align:center; padding:7rem 7vw;}
 
 /* padres y padrinos */
 .people-sec{background:var(--black); overflow:hidden;}
-.bg-photo{position:absolute; inset:0; background:url('../images/fondo-padres.jpg') center 15%/cover no-repeat; filter:var(--photo-filter);}
+.bg-photo{position:absolute; inset:0; background:url('../images/016.jpeg') center 15%/cover no-repeat; filter:var(--photo-filter);}
 .people-sec::after{content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,10,13,.82), rgba(10,10,13,.6) 45%, rgba(10,10,13,.86));}
 .people-sec > *:not(.bg-photo){position:relative; z-index:2;}
 .people{margin-bottom:3.6rem;}
