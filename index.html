@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dania · Mis XV años</title>
+<meta property="og:title" content="Dania · Mis XV años">
+<meta property="og:description" content="¡Siente el ritmo de mis XV! 9 de enero de 2027">
+<meta property="og:image" content="images/foto-01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<!-- Definiciones SVG reutilizables: bola disco -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sparkle" viewBox="0 0 40 40">
+      <path d="M20 0 C21 12 28 19 40 20 C28 21 21 28 20 40 C19 28 12 21 0 20 C12 19 19 12 20 0 Z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ SOBRE / PANTALLA DE INICIO ============ -->
+<div class="splash glitter-dark" id="splash">
+  <img class="ball splash-ball sb1" src="images/bola-disco.png" alt="" aria-hidden="true">
+  <img class="ball splash-ball sb2" src="images/bola-disco.png" alt="" aria-hidden="true">
+  <span class="eyebrow">Mis XV</span>
+  <h1 class="script splash-name">Dania</h1>
+
+  <button class="envelope" id="envelope" aria-label="Abrir la invitación">
+    <span class="env-back"></span>
+    <span class="env-card"><i>Mis XV</i><b class="script">Dania</b></span>
+    <span class="env-front"></span>
+    <span class="env-flap"></span>
+    <img class="ball env-seal" src="images/bola-disco.png" alt="" aria-hidden="true">
+  </button>
+
+  <p class="splash-hint">Toca el sobre para abrir la invitación</p>
+</div>
+
+<!-- Música -->
+<audio id="bgAudio" src="audio/cancion.mp3" loop preload="auto"></audio>
+<button class="music-fab paused" id="musicFab" aria-label="Música">
+  <span class="bars"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hang-balls" aria-hidden="true">
+    <div class="hang h1"><span class="string"></span><img class="ball" src="images/bola-disco.png" alt="" aria-hidden="true"></div>
+    <div class="hang h2"><span class="string"></span><img class="ball" src="images/bola-disco.png" alt="" aria-hidden="true"></div>
+    <div class="hang h3"><span class="string"></span><img class="ball" src="images/bola-disco.png" alt="" aria-hidden="true"></div>
+  </div>
+  <svg class="spark s1" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark s2" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark s3" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+
+  <div class="hero-inner">
+    <span class="eyebrow light">Mis quince años</span>
+    <h2 class="script hero-name">Dania</h2>
+    <p class="hero-claim">¡Siente el ritmo de mis XV!</p>
+    <div class="arch reveal"><img class="photo" src="images/015.jpeg" alt="Dania con su pastel de XV entre bolas disco"></div>
+    <p class="hero-date">Sábado · 9 de enero · 2027</p>
+
+    <div class="vinyl-wrap" id="vinylWrap">
+      <button class="vinyl" id="vinylBtn" aria-label="Reproducir música">
+        <span class="disc"></span>
+        <span class="label-disc"><span class="play-tri"></span><span class="pause-bars"><i></i><i></i></span></span>
+      </button>
+      <span class="vinyl-text" id="vinylText">Toca el disco para escuchar</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ VERSO ============ -->
+<section class="verse-sec">
+  <div class="tq-stars" aria-hidden="true">
+  <svg class="spark tq-star" style="left:8%; top:8%; width:22px; animation-delay:0s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:86%; top:6%; width:16px; animation-delay:-1s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:20%; top:22%; width:12px; animation-delay:-2s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:93%; top:26%; width:24px; animation-delay:-0.5s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:5%; top:40%; width:18px; animation-delay:-1.5s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:78%; top:14%; width:12px; animation-delay:-2.4s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:48%; top:3%; width:14px; animation-delay:-0.8s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:14%; top:58%; width:26px; animation-delay:-1.2s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:90%; top:50%; width:14px; animation-delay:-2s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:30%; top:70%; width:14px; animation-delay:-0.3s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:70%; top:76%; width:22px; animation-delay:-1.8s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:6%; top:82%; width:14px; animation-delay:-2.6s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:94%; top:78%; width:18px; animation-delay:-0.9s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:50%; top:92%; width:16px; animation-delay:-1.4s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:40%; top:15%; width:10px; animation-delay:-2.2s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  <svg class="spark tq-star" style="left:62%; top:60%; width:10px; animation-delay:-0.6s" viewBox="0 0 40 40"><use href="#sparkle"/></svg>
+  </div>
+  <p class="verse reveal">Hace quince años Dios me regaló la vida y una familia maravillosa. Hoy, con el corazón lleno de gratitud y bajo su bendición, te invito a celebrar conmigo este día tan especial en el que dejo atrás mi niñez para comenzar una nueva etapa.</p>
+  <div class="verse-sign script reveal">Dania</div>
+</section>
+
+<!-- ============ CUENTA REGRESIVA ============ -->
+<section class="count-sec">
+  <div class="hang center-hang" aria-hidden="true"><span class="string"></span><img class="ball" src="images/bola-disco.png" alt="" aria-hidden="true"></div>
+  <h2 class="script sec-title reveal">Faltan</h2>
+  <div class="countdown reveal" id="countdown">
+    <div class="unit"><b id="cd-d">00</b><span>Días</span></div>
+    <div class="sep">:</div>
+    <div class="unit"><b id="cd-h">00</b><span>Horas</span></div>
+    <div class="sep">:</div>
+    <div class="unit"><b id="cd-m">00</b><span>Minutos</span></div>
+    <div class="sep">:</div>
+    <div class="unit"><b id="cd-s">00</b><span>Segundos</span></div>
+  </div>
+  <p class="count-after reveal">para el gran día</p>
+</section>
+
+<!-- ============ FECHA ============ -->
+<section class="date-sec glitter">
+  <div class="date-card reveal">
+    <span class="dow script">Sábado</span>
+    <span class="day">9</span>
+    <span class="mon">ENERO 2027</span>
+  </div>
+</section>
+
+<!-- ============ PADRES Y PADRINOS ============ -->
+<section class="people-sec">
+  <div class="bg-photo" aria-hidden="true"></div>
+  <h2 class="script sec-title light reveal">Con la bendición de Dios y</h2>
+
+  <div class="people reveal">
+    <h3 class="people-label">Mis padres</h3>
+    <p class="person">Luis Alberto Sosa</p>
+    <p class="amp">&amp;</p>
+    <p class="person">Elisa Aquino</p>
+  </div>
+
+  <div class="people reveal">
+    <h3 class="people-label">Mis padrinos</h3>
+    <p class="person">Daniel Valencia</p>
+    <p class="person">Araceli Sosa</p>
+    <p class="person">Carmela Castillo</p>
+  </div>
+</section>
+
+<!-- ============ ITINERARIO ============ -->
+<section class="itin-sec" id="itinerario">
+  <h2 class="script sec-title reveal">Itinerario</h2>
+
+  <div class="timeline">
+    <div class="t-item reveal">
+      <svg class="t-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M32 4v10M27 9h10"/><path d="M32 14 18 26v28h28V26L32 14Z"/><path d="M26 54V40a6 6 0 0 1 12 0v14"/><path d="M18 26H8v28h10M46 26h10v28H46"/></svg>
+      <h3>Ceremonia religiosa</h3>
+      <p class="t-time">7:00 PM</p>
+      <p class="t-place">Jardín Salón Rivento</p>
+    </div>
+    <div class="t-line"></div>
+    <div class="t-item reveal">
+      <img class="t-icon" src="images/bola-disco.png" alt="" aria-hidden="true">
+      <h3>Recepción</h3>
+      <p class="t-time">8:00 PM</p>
+      <p class="t-place">Salón Rivento</p>
+    </div>
+  </div>
+
+  <a class="btn-pill reveal" id="mapBtn" href="#" target="_blank" rel="noopener">Ver ubicación</a>
+</section>
+
+<!-- ============ VESTIMENTA ============ -->
+<section class="dress-sec glitter">
+  <div class="dress-card reveal">
+    <img class="crown-top" src="images/corona-plata.png" alt="" aria-hidden="true">
+    <h2 class="script dress-title">Código de vestimenta</h2>
+    <p class="dress-sub">Formal elegante</p>
+
+    <div class="dress-pair">
+      <div class="dp">
+        <span class="dp-k">Hombres</span><span class="dp-v">Traje</span>
+        <img src="images/muneco-hombre.png" alt="Silueta de hombre con traje">
+      </div>
+      <div class="dp-line"><i></i></div>
+      <div class="dp">
+        <span class="dp-k">Mujeres</span><span class="dp-v">Vestido</span>
+        <img src="images/muneco-mujer.png" alt="Silueta de mujer con vestido largo">
+      </div>
+    </div>
+
+    <div class="reserve-box">
+      <div class="crown-splash"><img src="images/corona-plata.png" alt="" aria-hidden="true"></div>
+      <div class="reserve-content">
+        <p class="reserved-title">Colores reservados</p>
+        <div class="swatches" aria-hidden="true">
+          <span class="sw sw-turq"></span><span class="sw sw-b1"></span><span class="sw sw-b2"></span><span class="sw sw-b3"></span><span class="sw sw-sky"></span><span class="sw sw-silver"></span>
+        </div>
+        <p class="reserved-text">Se reserva el color <strong>azul en todas sus tonalidades</strong> y el color <strong>plata</strong> para la quinceañera.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="gal-sec">
+  <h2 class="script sec-title reveal">Mi momento</h2>
+  <div class="polaroids">
+    <figure class="pola p1 reveal" data-i="0"><img class="photo" src="images/foto-02.jpg" alt="Dania con guitarra eléctrica y bolas disco"><svg class="pstar" viewBox="0 0 40 40"><use href="#sparkle"/></svg></figure>
+    <figure class="pola p2 reveal" data-i="1"><img class="photo" src="images/foto-03.jpg" alt="Dania con su corona"><svg class="pstar" viewBox="0 0 40 40"><use href="#sparkle"/></svg></figure>
+    <figure class="pola p3 reveal" data-i="2"><img class="photo" src="images/foto-01.jpg" alt="Dania con su pastel de XV"><svg class="pstar" viewBox="0 0 40 40"><use href="#sparkle"/></svg></figure>
+  </div>
+  <p class="gal-hint">Toca una foto para verla en grande</p>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">Cerrar ✕</button>
+  <button class="lb-arrow prev" id="lbPrev" aria-label="Anterior">‹</button>
+  <img class="photo" id="lbImg" src="" alt="">
+  <button class="lb-arrow next" id="lbNext" aria-label="Siguiente">›</button>
+</div>
+
+<!-- ============ REGALOS ============ -->
+<section class="gift-sec">
+  <svg class="gift-env reveal" viewBox="0 0 120 96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M26 34 L30 12 H90 L94 34"/>
+    <circle cx="60" cy="22" r="5"/>
+    <rect x="10" y="32" width="100" height="58" rx="7"/>
+    <path d="M10 38 L60 70 L110 38"/>
+    <path d="M10 86 L48 58 M110 86 L72 58"/>
+  </svg>
+  <h2 class="script sec-title ice reveal">Sugerencia de regalos</h2>
+  <p class="gift-text reveal">El mejor regalo es tu presencia, pero si deseas hacer un obsequio y te es difícil elegir. No te preocupes habrá lluvia de sobres en la recepción del salón.</p>
+</section>
+
+<!-- ============ CONFIRMACIÓN ============ -->
+<section class="rsvp-sec glitter-dark">
+  <h2 class="script sec-title light reveal">Confirmar asistencia</h2>
+  <p class="rsvp-lead reveal">Me haría muy feliz que me acompañes. Confirma tu asistencia con un toque.</p>
+  <div class="rsvp-btns reveal">
+    <button class="btn-pill solid" id="rsvpYes">Confirmar aquí</button>
+    <button class="btn-pill ghost" id="rsvpNo">No podré asistir</button>
+  </div>
+  <p class="rsvp-msg" id="rsvpMsg"></p>
+</section>
+
+<footer>
+  <div class="script f-name">Dania</div>
+  <p>9 · 01 · 2027</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
